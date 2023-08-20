@@ -25,6 +25,11 @@
 	text-decoration: none;
 	color: #333;
 	font-family: "Alegreya Sans";
+	padding: 15px 15px;
+	}
+.botonera ul li a:hover {
+	background-color: #FFD700;
+	color: black;
 }
 .logo{
 	display:flex;
@@ -35,7 +40,7 @@
 	font-size:16px;
 	}
 h1{
-	font-family:"IBM Plex Mono",'Roboto Slab';
+	font-family:"IBM Plex Mono",'Roboto Slab'; /* cómo hago para seleccionar una fuente que funcione en todos los sistemas operativos?*/
 	font-size: 54px;
 	font-weight: 500
 	}
