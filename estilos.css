@@ -25,7 +25,7 @@
 	text-decoration: none;
 	color: #333;
 	font-family: "Alegreya Sans";
-	padding: 15px 15px;
+	padding: 10px 15px;
 	}
 .botonera ul li a:hover {
 	background-color: #FFD700;
@@ -41,9 +41,25 @@
 	font-size:16px;
 	margin-left: 50px;
 	}
+.trabajos{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
 .contacto{
 	margin-bottom: 40px;
 	margin-top:20px;
+}
+.contacto a{
+	text-decoration: none;
+	margin: 25px;
+	font-family: "Alegreya Sans";
+	font-size:14px;
+	color: black;
+	padding: 5px 5px;
+}
+.contacto  a:hover {
+	background-color: #FFD700;
+	color: black;
 }
 .info{
 	margin-bottom: 20px;
