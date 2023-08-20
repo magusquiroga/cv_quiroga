@@ -60,14 +60,18 @@ h3 a{
 	color: inherit;
 	background-color:#FFD700;
 	padding: 5px 5px;
+	margin-bottom: 50px;
 }
 p{
 	font-family:"Alegreya Sans";
 	font-size:16px
 }
+.info{
+	margin-bottom: 20px;
+	}
 @font-face{
 	font-family:"Clash Display";
 	src: url("fonts/ClashDisplay-Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style:normal;
-}/*no se si lo hice bien realmente */
+}
