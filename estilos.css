@@ -30,6 +30,10 @@
 	display:flex;
 	align-content: center;
 }
+.estudios{
+	font-family: "Alegreya Sans";
+	font-size:14px;
+}
 h1{
 	font-family:'Clash Display';
 	font-size: 54px
