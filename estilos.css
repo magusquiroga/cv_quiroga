@@ -40,7 +40,7 @@
 	font-size:16px;
 	}
 h1{
-	font-family:"Clash Display", "sans serif";
+	font-family:"Clash Display", "Anton","sans serif";
 	font-size: 54px;
 	font-weight: 500
 	}
@@ -70,4 +70,4 @@ p{
 	src: url("fonts/ClashDisplay-Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style:normal;
-}
+}/*no se si lo hice bien realmente */
