@@ -33,14 +33,16 @@
 .estudios{
 	font-family: "Alegreya Sans";
 	font-size:14px;
-}
+	}
 h1{
 	font-family:'Clash Display';
 	font-size: 54px
 }
 h2{
 	font-family: "Alegreya Sans";
-	font-size: 22px
+	font-size: 22px;
+	font-weight: 100;
+	
 }
 h3{
 	font-family:"Alegreya Sans";
