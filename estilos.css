@@ -30,7 +30,6 @@
 	padding: 10px 15px;
 	}
 .botonera ul li a:hover {
-	/*background-color: #FFD700;*/
 	color: black;
 	border-bottom: 5px solid #000000;
 }
@@ -82,11 +81,17 @@
 font-size:10px;
 }
 h1{
-	font-family:"Clash Display", "Anton","sans serif";
-	font-size: 54px;
+	font-family:"Clash Display","sans serif";
+	font-size: 100px;
 	font-weight: 500;
-	margin-left: 30px;
+	margin-left: 0px;
+	padding: 200px;
 	}
+h1:hover{
+	background-color: #000000;
+	color: #ffffff;
+	font-family:"clash display light"
+}
 h2{
 	font-family: "Alegreya Sans";
 	font-size: 40px;
@@ -117,6 +122,12 @@ p{
 @font-face{
 	font-family:"Clash Display";
 	src: url("fonts/ClashDisplay-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:"Clash Display Light";
+	src: url("fonts/ClashDisplay-Light.otf") format("opentype");
 	font-weight: normal;
 	font-style:normal;
 }
