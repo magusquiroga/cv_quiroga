@@ -54,6 +54,17 @@
 .proyectos:hover{
 	border-bottom-style:solid;
 }
+columnas-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+	max-width: 100%;
+}
+.columna {
+  flex-basis: calc(50% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+}
 .contacto{
 	margin-bottom: 40px;
 	margin-top:20px; 
