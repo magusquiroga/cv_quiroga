@@ -141,14 +141,14 @@ h1:hover{
 	font-family:"clash display light"
 }
 h2{
-	font-family: "Alegreya Sans";
+	font-family: "Alegreya Sans", sans serif;
 	font-size: 50px;
 	font-weight: 200;
 	margin-bottom: 10px;
 	margin-left: 80px;
  }
 h3{
-	font-family:"Alegreya Sans";
+	font-family:"Alegreya Sans",sans serif;
 	font-size:14px;
 	text-transform: uppercase;
 	font-weight:900;
