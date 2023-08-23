@@ -38,6 +38,9 @@
 	align-content: center;
 	margin-left: 30px;
 }
+.perfil{
+	padding: 0px 0px 0px 80px ;
+}
 .estudios{
 	font-family: "Alegreya Sans";
 	font-size:16px;
@@ -55,10 +58,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 70%;
+  max-width: 80%;
 }
 .columna {
-  flex-basis: calc(50% - 10px);
+  flex-basis: calc(50% - 20px);
   padding: 10px;
   box-sizing: border-box;
 }
