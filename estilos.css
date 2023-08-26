@@ -5,6 +5,7 @@
 *{
 	margin: 0px;
 	padding:0px;
+	font-family: "Alegreya Sans";
 }
 
 /* MENÚ CABECERA */
@@ -14,7 +15,6 @@
 	justify-content: space-between;
 	padding: 10px;
 	background-color: #f5f5f5;
-	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
 }
 .botonera ul {
@@ -29,20 +29,19 @@
 .botonera ul li a {
 	text-decoration: none;
 	color: #333;
-	font-family: "Alegreya Sans";
 	padding: 10px 15px;
 	}
 .botonera ul li a:hover {
 	color: black;
 	border-bottom: 5px solid #000000;
 }
-
-/* PRESENTACION */
 .logo{
 	display:flex;
 	align-content: center;
 	margin-left: 30px;
 }
+
+/* PRESENTACION */
 .perfil{
 	padding: 0px 0px 0px 80px ;
 }
@@ -51,7 +50,6 @@
 	font-size: 200px;
 }
 .presentacion{
-	font-family: 'Alegreya Sans';
 	font-size: 18px;
 	background-color: black;
 	color:aliceblue;
@@ -69,7 +67,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   max-width:100%;
-background-color: #FFD700;
+	background-color: #FFD700;
 }
 .columna1 {
   flex-basis: calc(50% - 20px);
@@ -77,7 +75,6 @@ background-color: #FFD700;
   box-sizing: border-box;
 }
 .estudios{
-	font-family: "Alegreya Sans";
 	font-size:16px;
 	margin-left: 80px;
 	}
@@ -106,7 +103,8 @@ background-color: #FFD700;
 	background-color: gold;
 }
 .columna p{
-	margin-right:80px;
+	margin-right:80 px;
+	padding:10px 0px 20px 0px;
 }
 
 /* ESTILO CONTACTO */
@@ -154,14 +152,12 @@ h1:hover{
 	font-family:"clash display light"
 }
 h2{
-	font-family: "Alegreya Sans", sans serif;
 	font-size: 50px;
 	font-weight: 200;
 	margin-bottom: 10px;
 	margin-left: 80px;
  }
 h3{
-	font-family:"Alegreya Sans",sans serif;
 	font-size:14px;
 	text-transform: uppercase;
 	font-weight:900;
@@ -179,7 +175,6 @@ h3 a:hover{
 	color: #ffffff;
 }
 h4{
-	font-family: "Alegreya Sans";
 	font-size:16px;
 	font-weight:500;
 	font-style:italic; 
@@ -187,7 +182,6 @@ h4{
 	margin-left: 80px;
 }
 p{
-	font-family:"Alegreya Sans";
 	font-size:16px;
 	margin-left: 80px;
 }
