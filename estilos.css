@@ -25,7 +25,7 @@
 	padding: 0;
 }
 .botonera ul li {
-	margin: 0 10px;
+	margin: 0 10px; 
 	}
 .botonera ul li a {
 	text-decoration: none;
@@ -44,7 +44,7 @@
 
 /* PRESENTACION */
 .perfil{
-	padding: 0px 0px 0px 80px ;
+	padding: 0px 0px 0px 80px; /* esta forma de optimizar margins y paddings está re buena, usala en el resto del documento */
 }
 .hola{
 	font-size: 200px;
@@ -59,7 +59,7 @@
 	margin-bottom: 20px;
 	background-color: #f5f5f5;
 	padding-bottom: 20px;
-	padding-top:20px;
+	padding-top:20px; /* optimizar */
 	max-width: 100%;
 }
 .columnas1-container {
@@ -70,7 +70,7 @@
 	background-color: #FFD700;
 }
 .columna1 {
-  flex-basis: calc(50% - 20px);
+  flex-basis: calc(50% - 20px); /* esta propiedad va a molestar mucho cuando hagamos responsive, mejor usar otras propiedades de flex en el padre, y si necesitás establecer un espacio entre las columnas más específico podés usar gap */
   padding: 10px;
   box-sizing: border-box;
 }
@@ -109,8 +109,8 @@
 
 /* ESTILO CONTACTO */
 .contacto{
-	margin-bottom: 40px;
-	margin-top:20px; 
+	margin-bottom: 40px; 
+	margin-top:20px;  /* optimizar */
 }
 .contacto a{
 	text-decoration: none;
@@ -159,7 +159,7 @@ h1{
 	background-color: #000000;
 	color: #ffffff;
 	}
-h1:hover{
+h1:hover{ /* este hover es buenísimo, tiene un defecto que, al reducir la tipografía, se reduce el tamaño de la caja, para arreglarlo habría que incluir acá una altura fija, que si no me equivoco es de 133px*/
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: lowercase;
@@ -176,14 +176,14 @@ h2{
 	font-size: 50px;
 	font-weight: 200;
 	margin-bottom: 10px;
-	margin-left: 80px;
+	margin-left: 80px; /* optimizar */
  }
 h3{
 	font-size:14px;
 	text-transform: uppercase;
 	font-weight:900;
 	margin-top: 10px;
-	margin-left: 80px;
+	margin-left: 80px; /* optimizar */
 }
 h3 a{
 	text-decoration:none;
@@ -200,7 +200,7 @@ h4{
 	font-weight:500;
 	font-style:italic; 
 	margin-top: 10px;
-	margin-left: 80px;
+	margin-left: 80px; /* optimizar */
 }
 p{
 	font-size:16px;
