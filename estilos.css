@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-/* creo que me podrían estar sobrando divisiones o estilos */
 
 /* CAMBIOS GENERALES */
 *{
@@ -44,35 +43,34 @@
 
 /* PRESENTACION */
 .perfil{
-	padding: 0px 0px 0px 80px; /* esta forma de optimizar margins y paddings está re buena, usala en el resto del documento */
-}
-.hola{
-	font-size: 200px;
-}
-.presentacion{
-	font-size: 18px;
-	background-color: black;
-	color:aliceblue;
-	padding:10px;
+	padding: 0px 0px 0px 80px; 
 }
 .info{
 	margin-bottom: 20px;
 	background-color: #f5f5f5;
-	padding-bottom: 20px;
-	padding-top:20px; /* optimizar */
+	padding:20px 0px 20px 0px; 
 	max-width: 100%;
 }
 .columnas1-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width:100%;
 	background-color: #FFD700;
 }
 .columna1 {
-  flex-basis: calc(50% - 20px); /* esta propiedad va a molestar mucho cuando hagamos responsive, mejor usar otras propiedades de flex en el padre, y si necesitás establecer un espacio entre las columnas más específico podés usar gap */
+  width:50%; 
   padding: 10px;
   box-sizing: border-box;
+}
+.columna1 p{ 
+	font-size: 18px;
+	background-color: black;
+	color:aliceblue;
+	padding: 10px;
+	max-width:80%;
+	margin-left: 0px;
 }
 .estudios{
 	font-size:16px;
@@ -90,14 +88,15 @@
 /* TABLA PROYECTOS */
 .columnas-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 100%;
 }
 .columna {
-  flex-basis: calc(50% - 20px);
   padding: 10px;
   box-sizing: border-box;
+  width:50%;
 }
 .columna:hover{
 	background-color: gold;
@@ -105,12 +104,12 @@
 .columna p{
 	margin-right:80 px;
 	padding:10px 0px 20px 0px;
+	max-width: 70%;
 }
 
 /* ESTILO CONTACTO */
 .contacto{
-	margin-bottom: 40px; 
-	margin-top:20px;  /* optimizar */
+	margin:20px 0px 40px 0px; 
 }
 .contacto a{
 	text-decoration: none;
@@ -125,15 +124,18 @@
 	font-size:14px;
 	margin-left: 80px;
 }
+.contacto img{
+	margin-top:20px;
+}
 .contacto img:hover{
 	transform: translateY(-5px);
 }
-.pie{
+footer{
 	border-top: 5px solid #000000;
 	background-color: #f5f5f5;
 	padding: 30px 0px;
 	}
-.pie p{
+footer p{
 font-size:10px;
 	margin-left: 80px;
 }
@@ -141,12 +143,13 @@ font-size:10px;
 .columnas2-container{
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
   	flex-wrap: wrap;
- 	 max-width: 100%;
+ 	max-width: 100%;
 }
 .columna3 {
-  flex-basis: calc(50% - 20px);
-  padding: 10px;
+  width:50%;
+  padding: 30px;
   box-sizing: border-box;
 }
 /* ESTILOS TITULOS */
@@ -159,12 +162,13 @@ h1{
 	background-color: #000000;
 	color: #ffffff;
 	}
-h1:hover{ /* este hover es buenísimo, tiene un defecto que, al reducir la tipografía, se reduce el tamaño de la caja, para arreglarlo habría que incluir acá una altura fija, que si no me equivoco es de 133px*/
+h1:hover{ 
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: lowercase;
 	font-family:"clash display";
 	font-size: 70px;
+	height: 252px; 
 }
 h1 .agus{
 	display: inline;
@@ -175,15 +179,13 @@ h2{
 	background-color: #000000;
 	font-size: 50px;
 	font-weight: 200;
-	margin-bottom: 10px;
-	margin-left: 80px; /* optimizar */
+	margin:0px 0px 20px 80px; 
  }
 h3{
 	font-size:14px;
 	text-transform: uppercase;
 	font-weight:900;
-	margin-top: 10px;
-	margin-left: 80px; /* optimizar */
+	margin: 10px 0px 0px 80px;
 }
 h3 a{
 	text-decoration:none;
@@ -199,14 +201,16 @@ h4{
 	font-size:16px;
 	font-weight:500;
 	font-style:italic; 
-	margin-top: 10px;
-	margin-left: 80px; /* optimizar */
+	margin:10px 0px 0px 80px; 
+}
+h5{
+	font-size: 200px;
 }
 p{
 	font-size:16px;
 	margin-left: 80px;
+	width:70%;
 }
-
 /* FUENTES */
 @font-face{
 	font-family:"Clash Display";

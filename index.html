@@ -4,20 +4,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>magustina quiroga</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="img/logo.svg" alt="logo">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 </head>
-<link href="estilos.css" rel="stylesheet" type="text/css">
-<link rel="icon" href="img/logo.svg"><!--probé poner el loguito acá-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-	rel="stylesheet">
 
-<!-- muy buen trabajo! te dejo más correcciones para que vayas puliendo.
-	- el primer error es tener todos los links fuera del head, movelos ahí 
-	- después, a nivel diseño, la mayoría de las líneas de texto son muy largas e incómodas para la lectura, te conviene agregar max-width a esas cajas para que tengan un tope de donde estirarse pero tampoco te complique cuando lleguemos a la parte de responsive
-	- hay otros comentarios en el resto del documento!-->
-	
 <body>
 	<header>
 		<nav class="botonera">
@@ -34,19 +29,19 @@
 	</header>
 	<main>
 		<h1>Mar&iacute;a <div class="agus">Agustina</div> Quiroga ✺ /</h1>
-		<div class="columnas1-container"> <!-- aunque sea una columna, todavía hay otras etiquetas que funcionan mejor en este caso. cuando cambies la etiqueta podés dejar la misma class -->
+		<section class="columnas1-container">
 			<div class="columna1">
 				<img class="perfil" src="img/agus.jpg" alt="perfil" width="400px" height="400px">
 			</div>
 			<div class="columna1">
-				<div class="hola">Hola!</div> <!-- este es un titular, el div está mal utilizado, una h va mejor -->
-				<div class="presentacion">Me llamo Mar&iacute;a Agustina Quiroga aunque mis amigos me dicen Tini.
-					Nac&iacute; y vivo en Adrogu&eacute;, provincia de Buenos Aires: Argentina.</div> <!-- este es un texto normal, un div sirve para contener otras etiquetas, pero no para textos -->
+				<h5>Hola!</h5>
+				<p>Me llamo Mar&iacute;a Agustina Quiroga aunque mis amigos me dicen Tini.
+					Nac&iacute; y vivo en Adrogu&eacute;, provincia de Buenos Aires: Argentina.</p>
 			</div>
-		</div>
+		</section>
 		<section id="seccion1" class="info">
 			<h2>✺ /Acerca de mí</h2>
-			<article class="columnas2-container"> <!-- no es correcto usar articles dentro de articles, o los internos, o el contenedor va a tener que cambiar, decidilo según la función que tenga, esto me sirve para hacer una división o es un artículo propiamente dicho? te pasa lo mismo más abajo -->
+			<section class="columnas2-container">
 				<article class="columna3">
 					<p> Estudio el cuarto año de Diseño y Comunicaci&oacute;n Visual en la Universidad Nacional de
 						Lan&uacute;s.
@@ -79,19 +74,22 @@
 							<li>Profesorado en Matem&aacute;tica - ISFD 41 ✺ (2014 - 2018).</li>
 						</ul>
 					</div>
-					<h3>Habilidades</h3> <!-- son las habilidades un listado de datos? -->
-					<p>Uso del paquete de Adobe (Ps, Ai, Id, Ax).</p>
-					<p>Uso del paquete Office.</p>
-					<p>Comunicaci&oacute;n y organizaci&oacute;n.</p>
-					<p>Trabajo en equipo.</p>
-					<p>Manejo de redes.</p>
+					<h3>Habilidades</h3>
+					<div class="estudios">
+						<ul>
+							<li>Uso del paquete de Adobe (Ps, Ai, Id, Ax).</li>
+							<li>Uso del paquete Office.</li>
+							<li>Comunicaci&oacute;n y organizaci&oacute;n.</li>
+							<li>Trabajo en equipo.</li>
+							<li>Manejo de redes.</li>
+						</ul>
+					</div>
 				</article>
-			</article>
+			</section>
 		</section>
 		<section id="seccion2" class="trabajos">
 			<h2>✺ /Trabajos destacados</h2>
-			<article class="columnas-container">
-				<!--me gustaría que el cambio de titulo cuando paso el cursor sea cuándo lo paso sobre la caja. Es decir, que el redireccionamiento vaya sobre la caja contenedora y no sobre el titulo del proyecto. No supe hacerlo ni googlearlo :)--> <!-- no estaríamos entendiendo la pregunta, pero lo que vemos está genial -->
+			<section class="columnas-container">
 				<article class="columna">
 					<img class="proyectos" src="img/fileteado.png" alt="fileteado" width="400px" height="200px">
 					<h3><a href="https://www.behance.net/gallery/172271829/Fileteado-porteno-Infografia"
@@ -110,8 +108,8 @@
 					<p>Trabajo realizado para Espacio Tipogr&aacute;fico 3. Realizaci&oacute;n de identidad visual para
 						festival de filatelia argentina a desarrollarse en Centro Cultural Recoleta.</p>
 				</article>
-			</article>
-			<article class="columnas-container">
+			</section>
+			<section class="columnas-container">
 				<article class="columna">
 					<img class="proyectos" src="img/waikiki.png" alt="fileteado" width="400px" height="200px">
 					<h3><a href="https://www.behance.net/gallery/159959023/WAIKIKI-Festival-de-surf"
@@ -128,21 +126,20 @@
 					<p>Trabajo realizado para Taller de Diseño 3. Realizaci&oacute;n de identidad visual para diseño de
 						bebidas enlatadas.</p>
 				</article>
-			</article>
+			</section>
 		</section>
 		<section id="seccion3" class="contacto">
 			<h2>✺ /Contacto</h2>
 			<p>Escribime a:</p>
 			<p>quiroga.magustina@gmail.com</p>
 			<p>1234-5678</p>
-			<br> <!-- qué está haciendo este br??? -->
-			<a href="https://instagram.com/tiquiroga"><img src="img/instagram.svg" alt="logo" width="30px"
-					height="30px"></a> <!-- a la etiqueta <a> agregale target="_blank" para que el link se abra en una pestaña distinta y no sea incómodo volver. el alt en ambos capaz sería mejor que sea descriptivo del sitio al que se redirecciona -->
-			<a href="https://www.behance.net/tiquiroga"><img src="img/behance.svg" alt="logo" width="30px"
-					height="30px"></a></a> <!--No sé cómo manejar el espacio entre estos dos iconos -->
+			<a href="https://instagram.com/tiquiroga" target="_blank"><img src="img/instagram.svg" alt="logo"
+					width="30px" height="30px"></a>
+			<a href="https://www.behance.net/tiquiroga" target="_blank"><img src="img/behance.svg" alt="logo"
+					width="30px" height="30px"></a></a>
 		</section>
 	</main>
-	<footer class="pie"> <!-- footer ya significa pie, ponerle una class o id que sea semánticamente igual a su significado es un error -->
+	<footer>
 		<p>Todos los derechos reservados.</p>
 		<p>Agosto 2023.</p>
 	</footer>
