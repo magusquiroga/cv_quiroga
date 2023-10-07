@@ -37,7 +37,6 @@
 }
 .logo{
 	display:flex;
-	align-content: center;
 	margin-left: 30px;
 }
 
@@ -130,15 +129,6 @@
 .contacto img:hover{
 	transform: translateY(-5px);
 }
-footer{
-	border-top: 5px solid #000000;
-	background-color: #f5f5f5;
-	padding: 30px 0px;
-	}
-footer p{
-font-size:10px;
-	margin-left: 80px;
-}
 /* COLUMNA ACERCA DE MI */
 .columnas2-container{
 	display: flex;
@@ -210,6 +200,36 @@ p{
 	font-size:16px;
 	margin-left: 80px;
 	width:70%;
+}
+/* SECCION CONTACTO */
+.contacto a{
+	font-size:36px;
+	width:70%;
+	text-decoration: none;
+	color: #000000;
+}
+.contacto{
+	display:flex;
+	flex-direction: column;
+}
+/* FOOTER */
+footer{
+	border-top: 5px solid #000000;
+	background-color: #f5f5f5;
+	padding: 30px 0px;
+	display:flex;
+	justify-content: space-between;
+	}
+footer p{
+font-size:10px;
+margin-left: 80px;
+}
+.izquierda {
+    text-align: left;
+}
+.derecha {
+    text-align: right;
+	padding-right: 80px;
 }
 /* FUENTES */
 @font-face{
