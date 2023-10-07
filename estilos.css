@@ -199,7 +199,7 @@ h5{
 }
 .aparece{
     text-align: center;
-    animation: aparecerDesaparecer 1s linear infinite;
+    animation: aparecerDesaparecer 1s linear 5;
 }
 p{
 	font-size:16px;
