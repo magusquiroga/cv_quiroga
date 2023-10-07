@@ -195,6 +195,11 @@ h4{
 }
 h5{
 	font-size: 200px;
+	display: flex;
+}
+.aparece{
+    text-align: center;
+    animation: aparecerDesaparecer 1s linear infinite;
 }
 p{
 	font-size:16px;
@@ -230,6 +235,18 @@ margin-left: 80px;
 .derecha {
     text-align: right;
 	padding-right: 80px;
+}
+/* ANIMACIONES */
+@keyframes aparecerDesaparecer {
+    0% {
+        opacity: 0; 
+    }
+    50% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0; 
+    }
 }
 /* FUENTES */
 @font-face{
