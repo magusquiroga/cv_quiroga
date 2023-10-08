@@ -30,10 +30,24 @@
 	<main>
 		<h2>¡Escribime!</h2>
 		<p>Consultame lo que quieras saber mandando tu mensaje en el siguiente formulario</p>
-		<form method="post" action="" target="_blank" enctype="text/plain">
-			<input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre">
-			<input type="text" name="apellido" id="apellido" maxlength="30" placeholder="Apellido">
-			<input type="text" name="mail" id="mail" maxlength="30" placeholder="Mail">
+		<form method="post" action="mailto:tinyquiroga@gmail.com?subject='email enviado por el formulario'"
+			target="_blank" enctype="text/plain">
+			<div>
+				<label for="name">Nombre:</label>
+				<input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre" required>
+				<label for="apellido">Apellido:</label>
+				<input type="text" name="apellido" id="apellido" maxlength="30" placeholder="Apellido" required>
+				<label for="email">Correo electrónico:</label>
+				<input type="tel" name="email" id="email" maxlength="40" placeholder="Correo electrónico" required>
+				<label for="tel">Número de teléfono:</label>
+				<input type="text" name="tel" id="tel" maxlength="11" placeholder="011 ____ ____" required>
+			</div>
+			<div>
+				<label>Mensaje</label>
+				<textarea name="mensaje" id="mensaje" maxlength="600">Escribí tu consulta</textarea>
+				<input type="submit" value="Enviar" class="enviar">
+				<input type="reset" value="Restablecer" class="enviar">
+			</div>
 		</form>
 	</main>
 	<footer>
