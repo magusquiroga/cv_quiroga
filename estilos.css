@@ -16,6 +16,8 @@
 	padding: 10px;
 	background-color: #f5f5f5;
 	border-bottom: 1px solid #ccc;
+	width: 100%;
+	box-sizing: border-box;
 }
 .botonera ul {
 	list-style: none;
@@ -96,6 +98,7 @@
   padding: 10px;
   box-sizing: border-box;
   width:50%;
+  box-sizing: border-box;
 }
 .columna:hover{
 	background-color: gold;
@@ -104,6 +107,7 @@
 	margin-right:80 px;
 	padding:10px 0px 20px 0px;
 	max-width: 70%;
+	box-sizing: border-box;
 }
 
 /* ESTILO CONTACTO */
@@ -136,6 +140,7 @@
 	flex-direction: row;
   	flex-wrap: wrap;
  	max-width: 100%;
+	box-sizing: border-box;
 }
 .columna3 {
   width:50%;
@@ -212,6 +217,7 @@ p{
 	width:70%;
 	text-decoration: none;
 	color: #000000;
+	box-sizing: border-box;
 }
 .contacto{
 	display:flex;
