@@ -131,13 +131,17 @@
     left:calc(50% + 660px);
     opacity: 0;
 }
+.content{
+	background-color: #000000;
+	padding: 40px;
+}
 .item .content{
+	opacity:1;
     position: absolute;
     top:50%;
     left:100px;
     width:300px;
     text-align: left;
-    padding:0;
     color:#eee;
     transform: translate(0,-50%);
     display: none;
@@ -148,14 +152,14 @@
     z-index: 11111;
 }
 .item .name{
+	opacity: 1;
     font-size: 40px;
     font-weight: bold;
-    opacity: 0;
     animation:showcontent 1s ease-in-out 1 forwards
 }
 .item .des{
     margin:20px 0;
-    opacity: 0;
+    opacity: 1;
     animation:showcontent 1s ease-in-out 0.3s 1 forwards
 }
 .item button{
