@@ -288,7 +288,6 @@ h1:hover{
 	font-family:"clash display";
 	font-size: 70px;
 	z-index: 9999;
-	animation: changeColor 0.5s infinite;
 }
 h1 .agus{
 	display: inline;
@@ -465,7 +464,7 @@ h1.splashpage{
 	height: 100vh;
 	background-color: #000000;
 	color: #f5f5f5;
-	animation: changeColor 0.1s infinite;
+	animation: changeColor 0.4s infinite;
 }
 @keyframes changeColor {
   0% {
