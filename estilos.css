@@ -22,7 +22,7 @@
     box-sizing: border-box;
 	background-color: #f5f5f5;
 	border-bottom: 1px solid #ccc;
-	z-index: 999;
+	z-index: 888;
 	transition: opacity 0.5s; 
   	opacity: 1; 
 }
@@ -103,6 +103,7 @@ width:100%;
 	padding: 30px 0px;
 	width: 100%;
 	box-sizing: border-box;
+	background-color: #f5f5f5;
 }
 .contenedor-proyectos img{
     display: block;
@@ -118,7 +119,9 @@ width:100%;
     justify-items: center;
 	gap:10px;
 }
-
+.contenedor-proyectos img:hover{
+   opacity: 0.2;
+}
 
 /*GALERIA*/
 .container{
@@ -229,6 +232,7 @@ button:hover{
     border-radius: 50%;
     border:1px solid #f5f5f5;
     transition: 0.5s;
+
 }.buttons button:hover{
     background-color: #FFD700;
 }
@@ -275,6 +279,7 @@ h1{
 	color: #ffffff;
 	box-sizing: border-box;
 	align-content: center;
+	z-index: 9999;
 	}
 h1:hover{ 
 	color: #000000;
@@ -282,6 +287,7 @@ h1:hover{
 	text-transform: lowercase;
 	font-family:"clash display";
 	font-size: 70px;
+	z-index: 9999;
 }
 h1 .agus{
 	display: inline;
@@ -383,6 +389,9 @@ footer p{
 .formulario{
 padding:20px 0px;
 }
+.formulario p{
+	font-size: 24px;
+}
 form{
 	margin: 20px 0px 20px 80px;
 	display: flex;
@@ -409,6 +418,7 @@ textarea{
 	height: 100px;
 	width: 100%;
 	padding: 5px;
+	background-color: #FFD700;
 }
 .enviar:hover{
 	background-color: #000000;
@@ -424,6 +434,25 @@ textarea{
     pointer-events: none; 
     display:contents; 
 }
+/*ICONOS*/
+.icon-container {
+  position: fixed;
+  top: 400px; 
+  left: 0px; 
+  background-color: #f5f5f5;
+  padding: 10px;
+  opacity: 1;
+}
+
+.icon {
+  width: 25px; 
+  height: 25px; 
+  display: flex;
+}
+.icon:hover{
+	border-bottom: 5px solid #000000;
+}
+
 /* ANIMACIONES */
 @keyframes aparecerDesaparecer {
     0% {
