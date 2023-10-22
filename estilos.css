@@ -2,13 +2,15 @@
 /* CSS Document */
 
 /*RESPONSIVE*/
+/*no sale*/
 @media screen and (max-width: 400px) {
-   body {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
-   .columna3{
-	width:100%;
-   }
+  .columna3 {
+    width: 100%;
+    float: none;
+  }
+  .columna1{
+	width: 100%;
+  }
 }
 
 /* CAMBIOS GENERALES */
