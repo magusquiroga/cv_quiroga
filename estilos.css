@@ -2,14 +2,18 @@
 /* CSS Document */
 
 /*RESPONSIVE*/
-/*no sale*/
 @media screen and (max-width: 400px) {
-  .columna3 {
+	img.perfil{
+width: 100%;
+height: 100%;
+	}
+  article.columna3 {
     width: 100%;
     float: none;
   }
-  .columna1{
+  article.columna1{
 	width: 100%;
+	display: flex;
   }
 }
 
