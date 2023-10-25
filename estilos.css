@@ -1,22 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*RESPONSIVE*/
-@media screen and (max-width: 400px) {
-	img.perfil{
-width: 100%;
-height: 100%;
-	}
-  article.columna3 {
-    width: 100%;
-    float: none;
-  }
-  article.columna1{
-	width: 100%;
-	display: flex;
-  }
-}
-
 /* CAMBIOS GENERALES */
 *{
 	margin: 0px;
@@ -63,6 +47,7 @@ height: 100%;
 	text-decoration: none;
 	color: #333;
 	padding: 10px 15px;
+	font-size:16px;
 	}
 .botonera ul li a:hover {
 	color: black;
@@ -283,24 +268,23 @@ button:hover{
   color: #f5f5f5;
 }
 /* ESTILOS TITULOS */
+.presentacion{
+width: 100%;
+height: 90vh;
+display: flex;
+background-color: #000000;
+box-sizing: border-box;
+align-content: center;
+align-items: center;
+color: #ffffff;
+text-transform: uppercase;
+padding: 80px;
+}
 h1 {
-	width: 100%;
 	font-size: 100px;
 	font-weight: 100;
-	text-transform: uppercase;
-	margin-left: 0px;
-	background-color: #000000;
-	color: #ffffff;
-	box-sizing: border-box;
-	align-content: center;
-	align-items: center;
-	padding:200px 40px 40px 80px;
-	height: 600px;
-	z-index: 9999;
 	}
-h1:hover{ 
-	height: 100%;
-	height: 600px;
+.presentacion:hover{ 
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: lowercase;
@@ -377,7 +361,7 @@ p{
 	text-decoration: none;
 	color: #000000;
 	box-sizing: border-box;
-	    animation: aparecerDesdeIzquierda 1s ease forwards;
+	animation: aparecerDesdeIzquierda 1s ease forwards;
 	animation-iteration-count: infinite;
 		
 	
@@ -478,25 +462,32 @@ textarea{
 	border-bottom: 5px solid #000000;
 }
 /*SPLASH PAGE*/
-h1.splashpage{
-	width: 100%;
-	height: 100vh;
+main.splashpage {
 	background-color: #000000;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start; 
+	gap:20px;
+}
+p.splashpage {
+	color:#f5f5f5;
+	font-family:'Clash Display';
+	font-size: 64px;
+    animation: aparecerDesdeIzquierda 1s ease forwards;
+}
+a.splashpage{
 	color: #f5f5f5;
-	animation: changeColor 0.4s infinite;
+	padding: 10px 40px 10px 100px;
+	animation: aparecerDesdeIzquierda 2s ease forwards;
+	text-decoration: none;
 }
-@keyframes changeColor {
-  0% {
-    color: #f5f5f5; /* Color inicial */
-  }
-  50% {
-    color: #FFD700; /* Color intermedio */
-  }
-  100% {
-    color: #000000; /* Color final, igual al inicial */
-  }
+a.splashpage:hover{
+	background-color: #FFD700;
+	color: #000000;
 }
-
 /* ANIMACIONES */
 @keyframes aparecerDesaparecer {
     0% {
@@ -508,6 +499,17 @@ h1.splashpage{
     100% {
         opacity: 0; 
     }
+}
+@keyframes changeColor {
+  0% {
+    color: #f5f5f5; /* Color inicial */
+  }
+  50% {
+    color: #FFD700; /* Color intermedio */
+  }
+  100% {
+    color: #000000; /* Color final, igual al inicial */
+  }
 }
 /* FUENTES */
 @font-face{
@@ -521,5 +523,63 @@ h1.splashpage{
 	src: url("fonts/ClashDisplay-Light.otf") format("opentype");
 	font-weight: normal;
 	font-style:normal;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 600px) {
+	.logo img{
+		width: 50%;
+		height: 50%;
+	}
+	.contacto a {
+	font-size: 40px;
+	}
+	.logo{
+		margin-left: 0px;
+	}
+	h1{
+	font-size:40px;
+		}
+	img.logo{
+		width: 48px;
+		height: 30px;
+
+	}
+		img.perfil{
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+		}
+	article.columna3 {
+		width: 100%;
+		float: none;
+	}
+	.item .content {
+		left:0px;
+	}
+	article.columna1{
+		width: 100%;
+		display: flex;
+	}
+	h5.texto-izquierda{
+		font-size:60px;
+	}
+	.item{
+		height:auto;
+	}
+	h2{
+		padding-top: 100px;
+	}
+	.columna1 p{
+	font-size: 14px;
+	}
+	.botonera ul li a{
+	font-size: 10px;
+	padding: 0px;
+	}
+	.botonera{
+	align-items: normal;
+	justify-content: center;
+	height: 5vh;
+	}
 }
 
