@@ -120,9 +120,10 @@ width:100%;
     justify-items: center;
 	gap:10px;
 }
-.contenedor-proyectos img:hover{
-   opacity: 0.2;
+.grid-proyectos img {
+  object-fit: cover;
 }
+
 img.perfil{
 	animation: aparecerDesdeIzquierda 3s ease forwards;
 }
@@ -291,7 +292,7 @@ h1 {
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: lowercase;
-	font-family:"clash display";
+	font-family:"Clash Display";
 	font-size: 70px;
 	z-index: 9999;
 }
@@ -312,6 +313,8 @@ h3{
 	text-transform: uppercase;
 	font-weight:900;
 	margin: 10px 0px 0px 80px;
+	padding-top: 40px;
+	border-top: 1px solid black;
 }
 h3 a{
 	text-decoration:none;
@@ -366,6 +369,7 @@ p{
 	box-sizing: border-box;
 	animation: aparecerDesdeIzquierda 1s ease forwards;
 	animation-iteration-count: infinite;
+	padding-left: 40px;
 		
 	
 }
