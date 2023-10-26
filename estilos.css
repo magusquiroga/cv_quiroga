@@ -47,7 +47,7 @@
 	text-decoration: none;
 	color: #333;
 	padding: 10px 15px;
-	font-size:16px;
+	font-size:14px;
 	}
 .botonera ul li a:hover {
 	color: black;
@@ -212,6 +212,11 @@ img.perfil{
 }
 button:hover{
 	background-color: #FFD700;
+	opacity: 0.8;
+}
+.arrow-left, .arrow-right {
+    font-size: 16px;
+    color: #000; 
 }
 @keyframes showcontent{
     from{
