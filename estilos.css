@@ -343,7 +343,9 @@ h5{
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
-
+.contenedor-proyectos img{
+	width:100%;
+}
 @keyframes aparecerDesdeIzquierda {
     from {
         transform: translateX(-100%); 
@@ -397,6 +399,9 @@ footer p{
 .derecha {
     text-align: right;
 	padding-right: 80px;
+}
+.derecha a img:hover{
+	opacity: 0.5;
 }
 /*FORMULARIO*/
 .formulario{
@@ -465,6 +470,7 @@ height: auto;
 }
 .icon:hover{
 	border-bottom: 5px solid #000000;
+	opacity: 0.5;
 }
 /*SPLASH PAGE*/
 main.splashpage {
