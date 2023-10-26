@@ -545,7 +545,7 @@ a.splashpage:hover{
 }
 /*RESPONSIVE*/
 @media screen and (max-width: 600px) {
-	.logo img{
+	.logo img {
 		width: 50%;
 		height: 50%;
 	}
@@ -561,7 +561,6 @@ a.splashpage:hover{
 	img.logo{
 		width: 48px;
 		height: 30px;
-
 	}
 	img.perfil{
 		width: 100%;
@@ -594,20 +593,21 @@ a.splashpage:hover{
 	.botonera ul li a{
 	font-size: 10px;
 	padding-bottom: 20px;
+	 text-align: center;
+	 padding: 0px;
 	}
 	.nav-botonera {
-		flex-direction: column;
-		height: 250px;
 		justify-content:flex-start;
 	}
+	
 	.botonera {
 		display: flex;
-		flex-direction: column;
 		align-content: flex-start;
 		justify-content: flex-start;
 		align-items: center;
 		margin-right: 0px;
 		width: 100%;
+		padding-right:30px;
 	}
 	.botonera li {
 		margin-top: 13px;
@@ -616,19 +616,13 @@ a.splashpage:hover{
 		padding: 5px 10px 5px 10px;
 		font-size:16px;
 	}
-
-    /* Cambiar el contenedor del formulario a una sola columna */
     .contenedor-formulario {
         flex-direction: column;
     }
-
-    /* Anular las propiedades flex en la regla de form */
     form {
-        display: block; /* Cambiar de flex a bloque */
+        display: block; 
         margin: 20px 0;
     }
-
-    /* Ajustar el ancho de los elementos de entrada y textarea */
     input, textarea {
         width: 100%;
     }
