@@ -353,7 +353,6 @@ h5{
         transform: translateX(0);
         opacity: 1; 
     }
-	
 }
 p{
 	font-size:20px;
@@ -370,8 +369,6 @@ p{
 	animation: aparecerDesdeIzquierda 1s ease forwards;
 	animation-iteration-count: infinite;
 	padding-left: 40px;
-		
-	
 }
 .contacto a:hover {
 background-color: #000000;
@@ -592,4 +589,5 @@ a.splashpage:hover{
 	height: 5vh;
 	}
 }
+
 
