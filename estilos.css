@@ -432,7 +432,7 @@ textarea{
 	background-color: #000000;
 	color:#f5f5f5;
 }
-.contenedor{
+.contenedor-formulario {
 height: auto;
 	display: flex;
 	flex-direction:row;
@@ -575,7 +575,7 @@ a.splashpage:hover{
 		height:auto;
 	}
 	h2{
-		padding-top: 100px;
+		padding-top: 120px;
 	}
 	.columna1 p{
 	font-size: 14px;
@@ -604,5 +604,13 @@ a.splashpage:hover{
 	.botonera a {
 		padding: 5px 10px 5px 10px;
 		font-size:16px;
+	}
+	.contenedor-formulario {
+		display: flex;
+		flex-direction: column;
+	}
+	.form {
+	display: flex;
+	flex-direction: column;
 	}
 }
