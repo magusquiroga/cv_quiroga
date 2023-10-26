@@ -411,11 +411,6 @@ form{
 	flex-direction: row;
 	gap: 40px;
 }
-form div{
-	height: auto;
-	display: flex;
-	flex-direction: column;
-}
 input{
 	display:flex;
 	background-color: #ccc;
@@ -436,6 +431,12 @@ textarea{
 .enviar:hover{
 	background-color: #000000;
 	color:#f5f5f5;
+}
+.contenedor{
+height: auto;
+	display: flex;
+	flex-direction:row;
+	gap:30px;
 }
 /*CURSOR*/
 .custom-cursor {
@@ -587,7 +588,6 @@ a.splashpage:hover{
 	flex-direction: column;
 	height: 230px;
 	justify-content:flex-start;
-
 	}
 	.botonera {
 		display: flex;
@@ -597,7 +597,6 @@ a.splashpage:hover{
 		align-items: center;
 		margin-right: 0px;
 		width: 100%;
-
 	}
 	.botonera li {
 		margin-top: 13px;
@@ -606,4 +605,7 @@ a.splashpage:hover{
 		padding: 5px 10px 5px 10px;
 		font-size:16px;
 	}
+	.contenedor {
+        flex-direction: column;
+    }
 }
